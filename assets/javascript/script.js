@@ -3,7 +3,9 @@ document.getElementById("answer-choices").innerHTML = "";
 document.getElementById("correct").innerHTML = "";
 document.getElementById("wrong").innerHTML = "";
 
-document.getElementById(start-quiz-button).onclick = function(){
+document.getElementById("start-quiz-button").onclick = function(){
+console.log("hello")
+
 
 }
 
