@@ -9,9 +9,9 @@ console.log("hello")
 
 }
 
-// var questions =[
+var questions =[
 
-// ]
+]
 
 
 
