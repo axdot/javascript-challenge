@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Javascript Challenge!</title>
 </head>
 <body>
@@ -12,24 +13,35 @@
       <p>View High Score</p>
     </div>
     <div id="timer">
-
+      <p>Timer: 60 </p>
     </div>
   </header>
 
   <main id="coding-quiz">
+    <h2>Coding Quiz Challenge</h2>
+    <h3>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</h3>
     <section id="questions">
-
+      <button id="start-quiz-button">Start Quiz!</button>
     </section>
-    <div id="buttons">
-
+    <div id="answer-choices">
+      <ol>
+        <li id="1st-choice">Option 1</li>
+        <li id="2nd-choice">Option 2</li>
+        <li id="3rd-choice">Option 3</li>
+        <li id="4th-choice">Option 4</li>
+      </ol>
     </div>
   </main>
 
   <footer>
     <div id="check-answer">
-
+      <p id="correct">Correct!</p>
+    </div>
+    <div>
+      <p id="wrong">Wrong</p>
     </div>
   </footer>
 
+  <script src="./assets/javascript/script.js"></script>
 </body>
 </html>

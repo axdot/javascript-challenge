@@ -1,17 +1,15 @@
-const para = document.createElement("p");
-const node = document.createTextNode("This is new.");
-para.appendChild(node);
 
-const element = document.getElementById("questions");
-element.appendChild(para);
+document.getElementById("answer-choices").innerHTML = "";
+document.getElementById("correct").innerHTML = "";
+document.getElementById("wrong").innerHTML = "";
 
+document.getElementById(start-quiz-button).onclick = function(){
 
+}
 
+// var questions =[
 
-
-
-
-
+// ]
 
 
 
@@ -23,35 +21,26 @@ element.appendChild(para);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//replace elements with JS
 
 // pseudocode (steps from Will)
 
 // an array of questions and answers
+
 // questions and answers tied together in an object
+
 // add event listener to button
+
 // event CB updates questions and answers
+
 // when we start quiz, the timer starts
+
 // when we pick an answer to a question, we check true or false
+
 // if its false, subtract time. if it's true, add to score.
+
+// when we click an answer, we also MOVE to the next question
+
 // next question appears
 
 // at the end of the quiz, we need a screen to input name
