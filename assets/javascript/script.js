@@ -1,14 +1,16 @@
-
+//clearing the elements on the screen 
 document.getElementById("answer-choices").innerHTML = "";
 document.getElementById("correct").innerHTML = "";
 document.getElementById("wrong").innerHTML = "";
-
+//selecting html elements for where i will display quiz questions/answers
 let question = document.querySelector("#questions")
 let answer1 = document.querySelector("#first-choice")
 let answer2 = document.querySelector("#second-choice")
 let answer3 = document.querySelector("#third-choice")
 let answer4 = document.querySelector("#fourth-choice")
 
+
+// array of objects, questions and answers
 const questions = [{
     questionOne: 'Commonly used data types DO not include:',
     answerOne: 'strings',
@@ -55,70 +57,31 @@ const questions = [{
   }
 ];
 
-// This is where I am at.
+// quiz function. I need to put in a "for" loop to go through the array each time I click on an answer choice
 let quiz = function() {
-  let question1 = questions[0].questionOne;
-  let answerA = questions[0].answerOne;
-  let answerB = questions[0].answerTwo;
-  let answerC = questions[0].answerThree;
-  let answerD = questions[0].answerFour;
+let question1 = questions[0].questionOne;
+let answerA = questions[0].answerOne;
+let answerB = questions[0].answerTwo;
+let answerC = questions[0].answerThree;
+let answerD = questions[0].answerFour;
 
-};
-// 
-
-document.getElementById("start-quiz-button").onclick = function(){
-quiz();
+document.getElementById("questions").innerHTML = question1;
+console.log(answerA);
+answer1.textContent = answerA.textContent
+document.getElementById("#first-choice").innerHTML = answerA
+document.getElementById("#second-choice").innerHTML = answerB;
+document.getElementById("#third-choice").innerHTML = answerC;
+document.getElementById("#fourth-choice").innerHTML = answerD;
 }
 
+// button listener that starts the quiz
+document.getElementById("start-quiz-button").addEventListener("click", quiz)
 
-
-
-
-// const obj = {name: "John", age: 30, city: "New York"};
-// const myJSON = JSON.stringify(obj.name);
-// document.getElementById("demo").innerHTML = myJSON;
-
-
-//replace elements with JS
-
-// pseudocode (steps from Will)
-
-// questions and answers tied together in an object
-
-// add event listener to button
-
-// event CB updates questions and answers
-
-// when we start quiz, the timer starts
-
-// when we pick an answer to a question, we check true or false
-
-// if its false, subtract time. if it's true, add to score.
-
-// when we click an answer, we also MOVE to the next question
-
-// next question appears
-
-// at the end of the quiz, we need a screen to input name
+//need to add a timer function that starts at the same time
+// document.getElementById("timer").addEventListener("click", timer)
 
 
 
 
 
 
-// GIVEN I am taking a code quiz
-
-// WHEN I click the start button
-// THEN a timer starts and I am presented with a question
-
-// WHEN I answer a question
-// THEN I am presented with another question
-
-// WHEN I answer a question incorrectly
-// THEN time is subtracted from the clock
-
-// WHEN all questions are answered or the timer reaches 0
-// THEN the game is over
-
-// WHEN the game is over
-// THEN I can save my initials and score
